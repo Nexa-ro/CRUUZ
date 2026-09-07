@@ -157,16 +157,13 @@ CRUUZ is being used to build practical experience across full-stack development,
 
 ## Product Preview
 
-A curated screenshot showcase is being prepared from the working CRUUZ interfaces. Public screenshots will use sanitized demonstration data and will avoid exposing personal, payroll, appraisal, authentication, or other sensitive information.
+### Employee Portal Dashboard
 
-Selected showcase areas:
+The employee portal brings work, tasks, events, training, documents, leave, payroll, and AI-assisted workplace navigation into one interface.
 
-1. Employee Dashboard
-2. People / HR Workspace
-3. Leave Management
-4. Performance & Appraisals overview
+![CRUUZ employee portal dashboard](docs/screenshots/employee-dashboard.jpg)
 
-Screenshots will be stored under `docs/screenshots/` and referenced here with descriptive alt text once the sanitized assets are ready.
+Additional public-safe previews will be added for People / HR, Leave Management, and Performance & Appraisals as suitable assets are sanitized.
 
 ---
 

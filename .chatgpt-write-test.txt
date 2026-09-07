@@ -1,0 +1,1 @@
+GitHub write authorization test. This temporary file can be removed after verification.

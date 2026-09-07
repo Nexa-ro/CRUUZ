@@ -2,295 +2,194 @@
 
 ### Full-Stack Mobility Platform
 
-CRUUZ is a full-stack mobility technology platform being developed to connect riders, drivers, businesses, and operations teams through mobile applications, backend services, real-time communication, payments, safety systems, and operational tooling.
+CRUUZ is a mobility technology platform under active development, connecting rider and driver experiences with backend services, real-time workflows, payments, safety tooling, business mobility, operations, and internal workplace systems.
 
-**Status:** Active Development
+**Status:** Active Development  
+**Website:** https://www.cruuz.org
+
+> This public repository is a portfolio and product-documentation repository. The full application source is not currently published here.
 
 ---
 
-## 🚀 Project Overview
+## Project Overview
 
 CRUUZ is being developed as a multi-application mobility ecosystem rather than a single ride-booking application.
 
-The platform includes work across:
+Current engineering work spans:
 
-- Rider experiences
-- Driver experiences
-- Booking and trip management
-- Driver matching and dispatch
-- Real-time trip functionality
-- Authentication and authorization
-- Wallet and payment-related workflows
-- Driver earnings
-- Safety and operational workflows
-- Operations tooling
+- Rider and driver application experiences
+- Booking and trip lifecycle workflows
+- Driver matching and dispatch concepts
+- Real-time application events
+- Authentication, authorization, and RBAC
+- Wallet, payment, earnings, and incentive workflows
+- Safety and operational tooling
 - Business mobility accounts
-- Promotions and incentives
-- Backend APIs
-- Database-driven services
+- Employee and People/HR workflows
+- Backend APIs and database-driven services
+- AI-assisted mobility and workplace concepts
 
-The project is also being used to explore intelligent driver recommendation and AI-assisted mobility functionality.
-
----
-
-## 🏗️ System Architecture
-
-CRUUZ is designed around multiple connected application layers:
-
-### Rider Layer
-
-Provides rider-facing functionality for requesting and managing mobility services.
-
-Areas under development include:
-
-- Account and profile functionality
-- Ride booking
-- Trip lifecycle
-- Driver information
-- Real-time trip updates
-- Payment-related workflows
-- Wallet functionality
-- Promotions
-- Safety functionality
-
-### Driver Layer
-
-Provides driver-facing functionality for operating on the platform.
-
-Areas include:
-
-- Driver account functionality
-- Availability and trip workflows
-- Ride requests
-- Active trip management
-- Earnings
-- Incentives
-- Driver performance information
-- Safety functionality
-- Real-time connectivity
-
-### Backend & API Layer
-
-Backend services provide application logic and communication between platform components.
-
-Engineering areas include:
-
-- REST APIs
-- Authentication
-- Authorization
-- Role-based access control
-- Database operations
-- Trip workflows
-- Payment-related workflows
-- Real-time events
-- Operational services
-
-### Operations Layer
-
-Operations tooling provides administrative visibility and platform-management functionality.
-
-Operational areas include:
-
-- Dispatch
-- Finance
-- Safety
-- Growth
-- Compliance
-- Driver operations
-- Rider operations
-- Business accounts
+Some components are implemented and testable, while others remain under active development or are planned architecture. This README intentionally distinguishes those states rather than presenting the platform as production-complete.
 
 ---
 
-## 🧠 Intelligent Driver Recommendation
+## System Architecture
 
-CRUUZ is being developed around an intelligent booking model that goes beyond simple nearest-driver assignment.
+```text
+CRUUZ
+|
+|-- Rider Application
+|-- Driver Application
+|-- Backend / API Services
+|-- Real-Time Services
+|-- Authentication & Access Control
+|-- Wallet & Payment Workflows
+|-- Safety & Trust Workflows
+|-- Operations Tooling
+|-- Business Mobility
+`-- Employee / People Workspace
+```
 
-The model is intended to recommend suitable drivers using operational and service-related factors while preserving rider choice.
+### Rider Experience
 
-The concept supports:
+Development areas include account and profile functionality, ride booking, trip lifecycle, driver information, real-time trip updates, payment-related workflows, wallet functionality, promotions, and safety features.
 
-1. Ride request creation
-2. Identification of suitable available drivers
-3. Evaluation of relevant matching factors
-4. Recommendation of an appropriate driver
-5. Optional rider selection where supported
-6. Dispatch and trip progression
+### Driver Experience
 
-This component remains under active development and experimentation.
+Development areas include driver account functionality, availability, ride requests, active-trip management, earnings, incentives, performance information, safety workflows, and real-time connectivity.
+
+### Backend & API Services
+
+Backend engineering includes REST APIs, authentication, authorization, role-based access control, database operations, trip workflows, payment-related logic, real-time events, and operational services.
+
+### Operations Tooling
+
+Operational areas include dispatch, finance, safety, growth, compliance, driver operations, rider operations, and business-account workflows.
 
 ---
 
-## ⚡ Real-Time Functionality
+## Real-Time Functionality
 
-Real-time functionality is an important part of the CRUUZ architecture.
-
-Socket.IO is used where applicable to support event-driven communication between applications and backend services.
+Socket.IO is used where applicable for event-driven communication between applications and backend services.
 
 Examples include:
 
 - Trip-state updates
-- Driver/rider events
-- Operational events
+- Driver and rider events
 - Dispatch-related communication
+- Operational events
 - Application connectivity updates
 
 ---
 
-## 💳 Payments, Wallet & Earnings
+## Intelligent Driver Recommendation
 
-CRUUZ includes financial and payment-related workflows designed around the mobility lifecycle.
+CRUUZ is exploring an intelligent booking model that can go beyond simple nearest-driver assignment. The concept evaluates relevant operational and service factors to recommend suitable available drivers while preserving rider choice where supported.
 
-Areas include:
-
-- Rider payments
-- Driver earnings
-- Wallet functionality
-- Promotions
-- Incentives
-- Driver bonuses
-- Cancellation-related workflows
-- Operational finance processes
-
-Financial functionality continues to evolve alongside the rest of the platform.
+This component remains experimental and under active development.
 
 ---
 
-## 🎁 Promotions & Driver Incentives
+## Payments, Wallet & Earnings
 
-CRUUZ includes promotion and incentive concepts for both rider growth and driver engagement.
+Financial workflows being developed include rider payments, driver earnings, wallet functionality, promotions, incentives, driver bonuses, cancellation-related logic, and operational finance processes.
 
-The driver incentive system includes qualification and settlement workflows designed to evaluate driver eligibility and process eligible awards.
-
-This area is being developed alongside driver earnings and finance functionality.
+These workflows continue to evolve with the rest of the platform and should not be interpreted as a production payment service from this public repository alone.
 
 ---
 
-## 🖥️ Operations Console
+## Business Mobility
 
-A dedicated operations interface supports internal platform-management workflows.
-
-The operations system covers areas such as:
-
-- Dispatch
-- Finance
-- Safety
-- Growth
-- Compliance
-- Driver operations
-- Rider operations
-- Business accounts
-
-The goal is to provide operational teams with centralized visibility and control over platform activity.
+CRUUZ is also being designed for organizational mobility. Developing and planned capabilities include company accounts, employee management, scheduled rides, airport transfers, department billing, cost centres, ride policies, business travel management, and monthly invoicing workflows.
 
 ---
 
-## 🏢 Business Mobility
+## Employee & People Operations
 
-CRUUZ is also being designed to support business and organizational mobility.
+The CRUUZ web application also contains workplace and People/HR interfaces. Current UI work demonstrated during development includes:
 
-Planned and developing business-account capabilities include:
+- Employee dashboard
+- Leave self-service and leave management
+- Training progress
+- Performance and appraisal workflows
+- People / HR workspace
+- Recruitment and employee records navigation
+- Documents
+- Role-aware workplace navigation
+- AI-assistant concepts
 
-- Company accounts
-- Employee management
-- Scheduled rides
-- Airport transfers
-- Department billing
-- Cost centres
-- Ride policies
-- Business travel management
-- Monthly invoicing workflows
+These modules are part of the broader operating platform and remain under development.
 
 ---
 
-## 🔐 Security & Access Control
+## Security & Access Control
 
-Security is considered throughout the application architecture.
-
-Areas include:
+Security-related engineering areas include:
 
 - Authentication
 - Authorization
 - Role-Based Access Control (RBAC)
 - API security principles
 - Operational access controls
-- Identity and access management concepts
+- Identity and access-management concepts
 - Security-aware application development
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
-### Web
-
-- TypeScript
-- React
-- Next.js
-
-### Mobile
-
-- React Native
-- Expo
-
-### Backend
-
-- Node.js
-- Express.js
-- REST APIs
-- Socket.IO
-
-### Data
-
-- PostgreSQL
-- Prisma
-
-### Engineering
-
-- Git
-- GitHub
-- API Integration
-- Authentication & Authorization
-- Role-Based Access Control
-- Database Design
-- Real-Time Systems
-- Debugging & Testing
+| Layer | Technologies |
+| --- | --- |
+| Web | TypeScript, React, Next.js |
+| Mobile | React Native, Expo |
+| Backend | Node.js, Express.js, REST APIs |
+| Real-time | Socket.IO |
+| Data | PostgreSQL, Prisma |
+| Engineering | Git, GitHub, API integration, debugging, testing |
 
 ---
 
-## 🧩 Engineering Areas Demonstrated
+## Engineering Areas Demonstrated
 
-Development of CRUUZ provides practical experience across:
-
-- Full-stack application development
-- Backend API development
-- Frontend development
-- Mobile application development
-- Relational database integration
-- Authentication and authorization
-- Role-based access control
-- Real-time application functionality
-- Event-driven workflows
-- Payment-related application logic
-- Operational tooling
-- Debugging and testing
-- Systems design
+CRUUZ is being used to build practical experience across full-stack development, backend APIs, frontend and mobile application development, relational databases, authentication and authorization, RBAC, real-time systems, event-driven workflows, payment-related application logic, operational tooling, debugging, testing, and systems design.
 
 ---
 
-## 📂 CRUUZ Ecosystem
+## Product Preview
 
-CRUUZ development spans several connected components, including:
+A curated screenshot showcase is being prepared from the working CRUUZ interfaces. Public screenshots will use sanitized demonstration data and will avoid exposing personal, payroll, appraisal, authentication, or other sensitive information.
 
-```text
-CRUUZ
-│
-├── Rider Application
-├── Driver Application
-├── Backend / API Services
-├── Operations Console
-├── Business Account Platform
-├── Authentication & Access Control
-├── Payment & Wallet Workflows
-├── Real-Time Services
-├── Promotions & Incentives
-└── Safety & Operational Systems
+Selected showcase areas:
+
+1. Employee Dashboard
+2. People / HR Workspace
+3. Leave Management
+4. Performance & Appraisals overview
+
+Screenshots will be stored under `docs/screenshots/` and referenced here with descriptive alt text once the sanitized assets are ready.
+
+---
+
+## Development Status
+
+**Active Development**
+
+CRUUZ is an evolving engineering project. The public repository currently documents the system and its development progress; it is not a claim that every described capability is production-ready.
+
+The project continues through implementation, integration, testing, debugging, and architectural refinement.
+
+---
+
+## Engineering Contribution
+
+**Max Collins Botchway**  
+Software Engineer / Full-Stack Developer
+
+Work on CRUUZ spans frontend interfaces, backend services, database-driven workflows, authentication and authorization, real-time functionality, mobile development, operational workflows, debugging, testing, and application integration.
+
+Core technologies:
+
+`TypeScript` · `React` · `Next.js` · `React Native` · `Node.js` · `Express.js` · `PostgreSQL` · `Prisma` · `REST APIs` · `Socket.IO`
+
+LinkedIn: https://www.linkedin.com/in/maxcb  
+GitHub: https://github.com/maxbotchway

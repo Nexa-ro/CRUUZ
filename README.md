@@ -140,13 +140,13 @@ CRUUZ is being used to build practical experience across full-stack development,
 
 ## Product Previews
 
-The public portfolio will present CRUUZ as three distinct application experiences:
+CRUUZ is presented as three distinct application experiences:
 
 1. **Rider App** — customer ride-booking and trip experience.
 2. **Driver App** — driver operations, trip management, earnings, and connectivity.
 3. **Employee Console** — employee workplace, leave, payroll, training, performance, documents, and People/HR workflows.
 
-A previously uploaded Employee Console preview was removed because the repository copy was corrupted. The original application screenshot is preserved and will be re-added together with selected Rider and Driver screens as public-safe portfolio assets.
+Selected public-safe application previews will be added as the portfolio documentation evolves.
 
 ---
 
